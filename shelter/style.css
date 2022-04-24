@@ -34,18 +34,108 @@
     color: #F1CDB3;
 }
 .secondlk{
-        position: absolute;
-        width: 200px;
-        height: 15px;
-        left: 44px;
-        top: 105px;      
-        font-family: 'Arial';
-        font-style: normal;
-        font-weight: 400;
-        font-size: 13px;
-        line-height: 15px;
-        display: flex;
-        align-items: center;
-        letter-spacing: 0.1em;
-        color: #FFFFFF;
+    position: absolute;
+    width: 200px;
+    height: 15px;
+    left: 44px;
+    top: 105px;      
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 15px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.1em;
+    color: #FFFFFF;
+}
+.rightmenu{
+    position: absolute;
+    width: 443px;
+    height: 27px;
+    left: 757px;
+    top: 76px;
+    display: flex;
+    flex-direction: row;
+}
+.about{
+    position: static;
+    left: 0%;
+    right: 0%;
+    top: 0%;
+    bottom: 0%;
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 160%;
+    color: #ffffff;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 10px 0px;
+    margin-left: 35px;
+}
+.pets{
+    position: static;
+    left: 0%;
+    right: 0%;
+    top: 0%;
+    bottom: 0%;
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 160%;
+    color: #ffffff;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 10px 0px;
+    margin-left: 35px;
+}
+.help{
+    position: static;
+    left: 0%;
+    right: 0%;
+    top: 0%;
+    bottom: 0%;
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 160%;
+    color: #ffffff;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 10px 0px;
+    margin-left: 35px;
+}
+.contacts{
+    position: static;
+    left: 0%;
+    right: 0%;
+    top: 0%;
+    bottom: 0%;
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 160%;
+    color: #ffffff;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 10px 0px;
+    margin-left: 35px;
+}
+a{
+    color: #ffffff; 
+    text-decoration: none;
+}
+a:hover{
+    text-decoration-color: #F1CDB3;
+    text-decoration: underline;
+    text-underline-position: -10px;
 }
