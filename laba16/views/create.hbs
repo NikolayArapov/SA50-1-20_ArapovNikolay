@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Добавление</title>
+    <style>
+        .field {
+            width: 180px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Добавление чебзика</h1>
+    <form method="POST">
+        <label>Фамилия</label><br>
+        <input name="surname"/><br><br>
+        <label>Имя</label><br>
+        <input name="imena"/><br><br>
+        <label>Отчество</label><br>
+        <input name="second_name"/><br><br>
+        <label>Год рождения</label><br>
+        <input name="birth"/><br><br>
+        <select name="gruppa">
+            {{#each student_group}}
+            <option value="{{this.id}}">{{this.course_name}}...{{this.speciality}}</option>
+            {{/each}}
+        </select>
+        <input type="submit" value="Отправить" />
+    </form>
+    <a href="/">К списку челиков</a>
+</body>
+
+</html>

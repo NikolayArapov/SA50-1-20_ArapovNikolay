@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Добавление специальности</title>
+    <style>
+        .field {
+            width: 180px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Добавление специальности</h1>
+    <p><a href="/tableSpeciality" style="text-decoration: none;">Посмотреть специальности</a></p>
+    <form method="POST">
+        <label>Название специальности</label><br>
+        <input name="name"/><br><br>
+        {{#each speciality}}
+        <option value="{{this.number}}"></option>
+        {{/each}}
+        <input type="submit" value="Отправить" />
+    </form>
+    <a href="/">К списку челиков</a>
+</body>
+
+</html>
