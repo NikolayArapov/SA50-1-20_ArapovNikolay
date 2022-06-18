@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Добавление</title>
+    <style>
+        .field {
+            width: 180px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Добавление группы</h1>
+    <p><a href="/grouptable" style="text-decoration: none;">Посмотреть группы</a></p>
+    <form method="POST">
+        <label>Название курса</label><br>
+        <input name="course_name"/><br><br>
+        <label>Номер курса</label><br>
+        <input name="course_number"/><br><br>
+        <label>Специальность</label><br>
+        <select name="speciality">
+            {{#each speciality}}
+            <option value="{{this.number}}">{{this.name}}   {{this.number}}</option>
+            {{/each}}
+        </select>
+        <input type="submit" value="Отправить" />
+    </form>
+    
+    <a href="/">К списку челиков</a>
+</body>
+
+</html>

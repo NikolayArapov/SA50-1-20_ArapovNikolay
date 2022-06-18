@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Просмотр групп</title>
+</head>
+<body>
+    <table>
+        <tr style="color: rgba(99, 221, 136, 0.479);">
+            <th>Название группы</th>
+            <th>Номер группы</th>
+        </tr>
+        {{#each speciality}}
+        <tr>
+            <td>{{this.name}}</td>
+            <td>{{this.number}}</td>
+        </tr>
+        {{/each}}
+    </table>
+    <a href="/">К списку челиков</a>
+</body>
+</html>
